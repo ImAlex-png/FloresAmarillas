@@ -2,9 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi primera página</title>
+    <title>Tus flores amarillas</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: yellow;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .flores {
+            font-size: 4rem;
+            animation: movimiento 2s infinite alternate ease-in-out;
+            text-align: center;
+        }
+
+        @keyframes movimiento {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+            100% { transform: translateY(0) rotate(-2deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
+    <h1>Tus flores amarillas</h1>
+    <div class="flores">
+        🌼🌼🌼<br>
+        🌼🌼🌼<br>
+        🌼🌼🌼
+    </div>
 </body>
 </html>
