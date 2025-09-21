@@ -29,9 +29,6 @@
       position: relative;
       width: 350px;
       height: 320px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
     }
 
     /* Estrellas de fondo */
@@ -55,18 +52,15 @@
       animation: crecerTallo 1.5s ease-out forwards;
     }
 
-    /* Más tallos (ahora 5 en total) */
     .tallo:nth-child(1) { left: 20px; height: 150px; animation-delay: 0s; }
     .tallo:nth-child(2) { left: 80px; height: 190px; animation-delay: 0.2s; }
     .tallo:nth-child(3) { left: 150px; height: 230px; animation-delay: 0.4s; }
     .tallo:nth-child(4) { left: 220px; height: 200px; animation-delay: 0.6s; }
     .tallo:nth-child(5) { left: 280px; height: 160px; animation-delay: 0.8s; }
 
-    /* Flores */
+    /* Flores (separadas de los tallos) */
     .flor {
       position: absolute;
-      bottom: 100%;
-      left: 50%;
       transform: translateX(-50%) scale(0);
       display: flex;
       flex-wrap: wrap;
@@ -76,6 +70,13 @@
       height: 70px;
       animation: aparecerFlor 1s ease-out forwards;
     }
+
+    /* Ajustar posición de cada flor */
+    .flor1 { left: 23px; bottom: 150px; animation-delay: 1.5s; }
+    .flor2 { left: 83px; bottom: 190px; animation-delay: 1.7s; }
+    .flor3 { left: 153px; bottom: 230px; animation-delay: 1.9s; }
+    .flor4 { left: 223px; bottom: 200px; animation-delay: 2.1s; }
+    .flor5 { left: 283px; bottom: 160px; animation-delay: 2.3s; }
 
     .petalo {
       width: 30px;
@@ -128,40 +129,37 @@
     <div class="estrella" style="top:50px; left:150px; width:2px; height:2px; animation-delay: 1s;"></div>
     <div class="estrella" style="top:80px; left:220px; width:3px; height:3px; animation-delay: 2s;"></div>
 
-    <!-- Tallos y flores (5 en total) -->
-    <div class="tallo">
-      <div class="flor" style="animation-delay: 1.5s;">
-        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
-        <div class="centro"></div>
-      </div>
+    <!-- Tallos -->
+    <div class="tallo"></div>
+    <div class="tallo"></div>
+    <div class="tallo"></div>
+    <div class="tallo"></div>
+    <div class="tallo"></div>
+
+    <!-- Flores -->
+    <div class="flor flor1">
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="centro"></div>
     </div>
 
-    <div class="tallo">
-      <div class="flor" style="animation-delay: 1.7s;">
-        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
-        <div class="centro"></div>
-      </div>
+    <div class="flor flor2">
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="centro"></div>
     </div>
 
-    <div class="tallo">
-      <div class="flor" style="animation-delay: 1.9s;">
-        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
-        <div class="centro"></div>
-      </div>
+    <div class="flor flor3">
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="centro"></div>
     </div>
 
-    <div class="tallo">
-      <div class="flor" style="animation-delay: 2.1s;">
-        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
-        <div class="centro"></div>
-      </div>
+    <div class="flor flor4">
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="centro"></div>
     </div>
 
-    <div class="tallo">
-      <div class="flor" style="animation-delay: 2.3s;">
-        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
-        <div class="centro"></div>
-      </div>
+    <div class="flor flor5">
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="centro"></div>
     </div>
   </div>
 </body>
