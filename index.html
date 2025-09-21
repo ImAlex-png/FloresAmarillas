@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flores Amarillas</title>
 </head>
+
 <body>
     <style>
         *,
@@ -27,6 +29,24 @@
             background-color: var(--dark-color);
             overflow: hidden;
             perspective: 1000px;
+        }
+
+        /* Ajustes para móviles */
+        @media (max-width: 480px) {
+            .message {
+                width: 80%;
+                /* ocupa el 80% del ancho de la pantalla */
+                max-width: 600px;
+                /* no se haga demasiado ancho en pantallas grandes */
+                margin: 20px auto;
+                /* centrado horizontal con margen arriba y abajo */
+                padding: 15px;
+                /* espacio interno */
+                background-color: #f0f0f0;
+                border-radius: 10px;
+                font-size: 1rem;
+                /* tamaño de texto relativo */
+            }
         }
 
         .night {
@@ -1962,6 +1982,7 @@
             </div>
         </div>
     </div>
-    <div class="message">Estas flores amarillas simbolizan la felicidad. Tu eres la mia ❤️ </div>
+
 </body>
+
 </html>
