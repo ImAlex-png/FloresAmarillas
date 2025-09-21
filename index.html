@@ -27,8 +27,8 @@
 
     .ramo {
       position: relative;
-      width: 250px;
-      height: 300px;
+      width: 350px;
+      height: 320px;
       display: flex;
       justify-content: center;
       align-items: flex-end;
@@ -55,9 +55,12 @@
       animation: crecerTallo 1.5s ease-out forwards;
     }
 
-    .tallo:nth-child(1) { left: 40px; height: 180px; animation-delay: 0s; }
-    .tallo:nth-child(2) { left: 120px; height: 220px; animation-delay: 0.3s; }
-    .tallo:nth-child(3) { left: 200px; height: 180px; animation-delay: 0.6s; }
+    /* Más tallos (ahora 5 en total) */
+    .tallo:nth-child(1) { left: 20px; height: 150px; animation-delay: 0s; }
+    .tallo:nth-child(2) { left: 80px; height: 190px; animation-delay: 0.2s; }
+    .tallo:nth-child(3) { left: 150px; height: 230px; animation-delay: 0.4s; }
+    .tallo:nth-child(4) { left: 220px; height: 200px; animation-delay: 0.6s; }
+    .tallo:nth-child(5) { left: 280px; height: 160px; animation-delay: 0.8s; }
 
     /* Flores */
     .flor {
@@ -125,33 +128,38 @@
     <div class="estrella" style="top:50px; left:150px; width:2px; height:2px; animation-delay: 1s;"></div>
     <div class="estrella" style="top:80px; left:220px; width:3px; height:3px; animation-delay: 2s;"></div>
 
-    <!-- Tallos y flores -->
-    <div class="tallo" style="--delay:0s;">
+    <!-- Tallos y flores (5 en total) -->
+    <div class="tallo">
       <div class="flor" style="animation-delay: 1.5s;">
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
+        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
         <div class="centro"></div>
       </div>
     </div>
 
-    <div class="tallo" style="--delay:0.3s;">
-      <div class="flor" style="animation-delay: 1.8s;">
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
+    <div class="tallo">
+      <div class="flor" style="animation-delay: 1.7s;">
+        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
         <div class="centro"></div>
       </div>
     </div>
 
-    <div class="tallo" style="--delay:0.6s;">
+    <div class="tallo">
+      <div class="flor" style="animation-delay: 1.9s;">
+        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+        <div class="centro"></div>
+      </div>
+    </div>
+
+    <div class="tallo">
       <div class="flor" style="animation-delay: 2.1s;">
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
-        <div class="petalo"></div>
+        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+        <div class="centro"></div>
+      </div>
+    </div>
+
+    <div class="tallo">
+      <div class="flor" style="animation-delay: 2.3s;">
+        <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
         <div class="centro"></div>
       </div>
     </div>
